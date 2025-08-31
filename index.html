@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richmond Car Detail - Premium Car Detailing Services</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Flash Messages (Removed Python dependency) -->
+    <div class="flash-messages" style="display: none;"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <img src="images/car logo-richmond.jpg" alt="Logo" class="brand-logo">
+                RICHMOND CAR DETAIL
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <img src="images/hero-img.jpg" alt="Luxury Car Detailing" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8">
+                    <h1 class="hero-title">Premium Car Detailing</h1>
+                    
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary btn-cta pulse-animation">
+                            <i class="fas fa-calendar-check me-2"></i>
+                            Book Now
+                        </a>
+                        
+                        <div class="discount-badge floating-badge">
+                            <div class="badge-content">
+                                <span class="discount-text">25% OFF</span>
+                                <span class="badge-subtitle">Annual Subscription</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Promotional Banner -->
+        <div class="promo-banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 text-center">
+                        <i class="fas fa-star promo-icon"></i>
+                    </div>
+                    <div class="col-lg-8">
+                        <h3 class="promo-title">Limited Time Offer: 25% Off Annual Detailing Subscription!</h3>
+                        <p class="promo-text">Start the new year with your car looking its best! Sign up for our annual car wash and detailing service before January 1st and save 25% on your subscription. Offer valid until December 31st. Book now and drive into 2026 in style!</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <a href="#contact" class="btn btn-dark btn-lg">
+                            <i class="fas fa-calendar me-2"></i>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Subscription Plans -->
+    <section id="subscriptions" class="subscription-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Annual Subscription Plans</h2>
+                <p class="section-subtitle">Save more with our convenient yearly plans</p>
+            </div>
+            
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-5">
+                    <div class="subscription-card slide-in-left">
+                        <div class="subscription-header">
+                            <h3 class="plan-name">Premium Plan</h3>
+                            <div class="plan-description">1 Inside-Out + 2 Outside Wash</div>
+                        </div>
+                        
+                        <div class="plan-benefits">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Monthly interior & exterior detail</li>
+                                <li><i class="fas fa-check-circle"></i> Bi-monthly exterior wash</li>
+                                <li><i class="fas fa-check-circle"></i> Priority booking</li>
+                                <li><i class="fas fa-check-circle"></i> 25% discount on additional services</li>
+                                <li><i class="fas fa-check-circle"></i> Free vehicle pickup & delivery</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-subscribe golden-gradient">
+                            <i class="fas fa-crown me-2"></i>
+                            Subscribe Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="subscription-card slide-in-right">
+                        <div class="subscription-header">
+                            <h3 class="plan-name">Essential Plan</h3>
+                            <div class="plan-description">4 Outside Wash</div>
+                        </div>
+                        
+                        <div class="plan-benefits">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Quarterly exterior wash</li>
+                                <li><i class="fas fa-check-circle"></i> Seasonal protection wax</li>
+                                <li><i class="fas fa-check-circle"></i> 15% discount on interior services</li>
+                                <li><i class="fas fa-check-circle"></i> Flexible scheduling</li>
+                                <li><i class="fas fa-check-circle"></i> Quality guarantee</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-subscribe golden-gradient">
+                            <i class="fas fa-star me-2"></i>
+                            Subscribe Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <!-- Service Packages -->
+    <section id="packages" class="packages-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Service Packages</h2>
+                <p class="section-subtitle">Choose the perfect package for your vehicle</p>
+            </div>
+            
+            <!-- Package Carousel -->
+            <div class="package-carousel-container">
+                <div class="package-carousel" id="packageCarousel">
+                    <div class="package-track" id="packageTrack">
+                <!-- Exterior Hand Wash -->
+                <div class="package-item active">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Exterior Hand Wash</h3>
+                            <div class="package-pricing">
+                                <div class="price-tier">Car <span class="price">$49.99</span></div>
+                                <div class="price-tier">SUV <span class="price">$59.99</span></div>
+                                <div class="price-tier">Van <span class="price">$69.99</span></div>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Premium exterior hand wash</li>
+                                <li><i class="fas fa-check"></i> Wheel cleaning</li>
+                                <li><i class="fas fa-check"></i> Tire shine</li>
+                                <li><i class="fas fa-check"></i> Window cleaning</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-package" data-service="exterior_wash">
+                            <i class="fas fa-calendar-check me-2"></i>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bronze Package -->
+                <div class="package-item">
+                    <div class="package-card package-popular">
+                        <div class="package-badge">Popular</div>
+                        <div class="package-header">
+                            <h3 class="package-name">Bronze</h3>
+                            <div class="package-pricing">
+                                <div class="price-tier">Car <span class="price">$149.99</span></div>
+                                <div class="price-tier">SUV <span class="price">$169.99</span></div>
+                                <div class="price-tier">Van <span class="price">$199.99</span></div>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Premium exterior hand wash</li>
+                                <li><i class="fas fa-check"></i> Interior vacuum</li>
+                                <li><i class="fas fa-check"></i> Interior vinyl surfaces cleaned</li>
+                                <li><i class="fas fa-check"></i> All glass surfaces cleaned</li>
+                                <li><i class="fas fa-check"></i> Wheel treatment/Tire dressing</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-package" data-service="bronze_package">
+                            <i class="fas fa-calendar-check me-2"></i>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Silver Package -->
+                <div class="package-item">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Silver</h3>
+                            <div class="package-pricing">
+                                <div class="price-tier">Car <span class="price">$449.99</span></div>
+                                <div class="price-tier">SUV <span class="price">$499.99</span></div>
+                                <div class="price-tier">Van <span class="price">$599.99</span></div>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Premium exterior hand wash</li>
+                                <li><i class="fas fa-check"></i> Interior upholstery shampoo</li>
+                                <li><i class="fas fa-check"></i> Floor mat shampoo</li>
+                                <li><i class="fas fa-check"></i> Interior vinyl cleaned and dressed</li>
+                                <li><i class="fas fa-check"></i> All glass surfaces cleaned</li>
+                                <li><i class="fas fa-check"></i> Wheel treatment/Tire shined</li>
+                                <li><i class="fas fa-check"></i> Exterior paint surface wax</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-package" data-service="silver_package">
+                            <i class="fas fa-calendar-check me-2"></i>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gold Plus Package -->
+                <div class="package-item">
+                    <div class="package-card package-premium">
+                        <div class="package-badge">Premium</div>
+                        <div class="package-header">
+                            <h3 class="package-name">Gold Plus</h3>
+                            <div class="package-pricing">
+                                <div class="price-tier">Car <span class="price">$599.99</span></div>
+                                <div class="price-tier">SUV <span class="price">$699.99</span></div>
+                                <div class="price-tier">Van <span class="price">$799.99</span></div>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> All silver plus services</li>
+                                <li><i class="fas fa-check"></i> Clay bar treatment</li>
+                                <li><i class="fas fa-check"></i> Engine shampoo & detail</li>
+                                <li><i class="fas fa-check"></i> Headlight polish</li>
+                                <li><i class="fas fa-check"></i> Leather cleaning & treatment</li>
+                                <li><i class="fas fa-check"></i> Underbody salt removal</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-package" data-service="gold_package">
+                            <i class="fas fa-calendar-check me-2"></i>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Richmond Special -->
+                <div class="package-item">
+                    <div class="package-card package-ultimate">
+                        <div class="package-badge">Ultimate</div>
+                        <div class="package-header">
+                            <h3 class="package-name">Richmond Special</h3>
+                            <div class="package-pricing">
+                                <div class="price-tier">Car <span class="price">$1499.99</span></div>
+                                <div class="price-tier">SUV <span class="price">$1599.99</span></div>
+                                <div class="price-tier">Van <span class="price">$1699.99</span></div>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> All gold plus services</li>
+                                <li><i class="fas fa-check"></i> Paint correction</li>
+                                <li><i class="fas fa-check"></i> Ceramic coating</li>
+                                <li><i class="fas fa-check"></i> Clay bar & scratch removal</li>
+                                <li><i class="fas fa-check"></i> Headlight polish</li>
+                                <li><i class="fas fa-check"></i> Engine shampoo, detail and dressed</li>
+                                <li><i class="fas fa-check"></i> All leather surfaces cleaned & treatment</li>
+                                <li><i class="fas fa-check"></i> Wheel treatment/Tire shine</li>
+                                <li><i class="fas fa-check"></i> Floor mat shampoo</li>
+                                <li><i class="fas fa-check"></i> Underbody salt removal</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-package" data-service="richmond_special">
+                            <i class="fas fa-calendar-check me-2"></i>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pick-N-Choose -->
+                <div class="package-item">
+                    <div class="package-card package-custom">
+                        <div class="package-header">
+                            <h3 class="package-name">Pick-N-Choose</h3>
+                            <div class="package-pricing">
+                                <div class="price-tier custom-pricing">Customize your service</div>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Clay bar <span class="custom-price">$89.99</span></li>
+                                <li><i class="fas fa-check"></i> Ceramic coating <span class="custom-price">from $999.99</span></li>
+                                <li><i class="fas fa-check"></i> Exterior paint surface wax <span class="custom-price">$199.99</span></li>
+                                <li><i class="fas fa-check"></i> Leather cleaning & treatment <span class="custom-price">$89.99</span></li>
+                                <li><i class="fas fa-check"></i> Underbody salt removal & wash <span class="custom-price">$59.99</span></li>
+                                <li><i class="fas fa-check"></i> Engine shampoo <span class="custom-price">$149.99</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="btn btn-package" data-service="pick_n_choose">
+                            <i class="fas fa-calendar-check me-2"></i>
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="carousel-navigation">
+                    <button class="carousel-btn prev-btn" id="packagePrevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-indicators" id="packageIndicators"></div>
+                    <button class="carousel-btn next-btn" id="packageNextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Work Gallery</h2>
+                <p class="section-subtitle">Take a look at the transformation our professional detailing makes</p>
+                
+                <!-- Gallery View Toggle -->
+                <div class="gallery-toggle-container">
+                    <button class="gallery-toggle-btn active" id="slideshowToggle" data-view="slideshow">
+                        <i class="fas fa-play-circle me-2"></i>
+                        <span class="btn-text">Slideshow</span>
+                    </button>
+                    <button class="gallery-toggle-btn" id="gridToggle" data-view="grid">
+                        <i class="fas fa-th me-2"></i>
+                        <span class="btn-text">View All</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Views Wrapper -->
+            <div class="gallery-views-wrapper">
+                <!-- Gallery Slideshow -->
+                <div class="gallery-view-container slideshow-view active" id="slideshowView">
+                <div class="gallery-slideshow-wrapper">
+                    <div class="gallery-slideshow" id="gallerySlideshow">
+                        <div class="gallery-slide active" data-slide="0">
+                            <img src="images/IMG_6214.jpeg" alt="Car Detailing Work" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="1">
+                            <img src="images/IMG_8906.heic" alt="Professional Car Wash" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="2">
+                            <img src="images/IMG_0085.heic" alt="Premium Car Service" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="3">
+                            <img src="images/IMG_5514.heic" alt="Car Detailing Results" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="4">
+                            <img src="images/IMG_5705.jpeg" alt="Quality Car Care" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="5">
+                            <img src="images/IMG_5733.jpeg" alt="Professional Results" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="6">
+                            <img src="images/IMG_5854.heic" alt="Expert Car Detailing" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="7">
+                            <img src="images/IMG_5986.heic" alt="Premium Car Wash" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <div class="gallery-slide" data-slide="8">
+                            <img src="images/IMG_9302.heic" alt="Car Care Excellence" class="gallery-slide-image" loading="lazy">
+                        </div>
+                        <!-- <div class="gallery-slide" data-slide="9">
+                            <img src="images/gallery-11.png" alt="Professional Car Service" class="gallery-slide-image" loading="lazy">
+                        </div> -->
+                    </div>
+                    
+                    <!-- Slideshow Navigation -->
+                    <button class="slide-nav-btn prev-btn" id="prevSlideBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slide-nav-btn next-btn" id="nextSlideBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-view-container grid-view" id="gridView">
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/IMG_6214.jpeg" alt="Car Detailing Work" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/IMG_8906.heic" alt="Professional Car Wash" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/IMG_5514.heic" alt="Premium Car Service" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="400">
+                        <img src="images/IMG_5514.heic" alt="Car Detailing Results" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="500">
+                        <img src="images/IMG_5705.jpeg" alt="Quality Car Care" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="600">
+                        <img src="images/IMG_0085.heic" alt="Professional Results" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="700">
+                        <img src="images/IMG_5733.jpeg" alt="Expert Car Detailing" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="800">
+                        <img src="images/IMG_5854.heic" alt="Premium Car Wash" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="900">
+                        <img src="images/IMG_5986.heic" alt="Car Care Excellence" loading="lazy">
+                    </div>
+                    <div class="gallery-grid-item" data-aos="fade-up" data-aos-delay="1000">
+                        <img src="images/IMG_9302.heic" alt="Professional Car Service" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Services -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Services</h2>
+                <p class="section-subtitle">Professional car care services that make your vehicle shine</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Ceramic Coating -->
+                <div class="col-lg-6">
+                    <div class="service-card spotlight-card">
+                        <div class="service-image">
+                            <img src="images/ceramic-coating.png" alt="Ceramic Coating">
+                            <div class="service-overlay">
+                                <i class="fas fa-shield-alt service-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-name">Ceramic Coating</h3>
+                            <p class="service-price">Starting From <span class="price-highlight">$999.99</span></p>
+                            
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Full exterior wash</li>
+                                <li><i class="fas fa-check"></i> Clay bar treatment</li>
+                                <li><i class="fas fa-check"></i> 2 Stage Paint Correction</li>
+                                <li><i class="fas fa-check"></i> Underbody wash</li>
+                                <li><i class="fas fa-check"></i> Ceramic coating application</li>
+                                <li><i class="fas fa-check"></i> Wheel treatment/Tire shine</li>
+                            </ul>
+                            
+                            <a href="#contact" class="btn btn-service glow-btn" data-service="ceramic_coating">
+                                <i class="fas fa-calendar me-2"></i>
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gold Wax -->
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/gold-wax.png" alt="Gold Wax">
+                            <div class="service-overlay">
+                                <i class="fas fa-gem service-icon"></i>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-name">Gold Wax</h3>
+                            <div class="pricing-tiers">
+                                <span class="tier-price">Car <strong>$349.99</strong></span>
+                                <span class="tier-price">SUV <strong>$399.99</strong></span>
+                                <span class="tier-price">Van <strong>$499.99</strong></span>
+                            </div>
+                            
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Exterior hand wash</li>
+                                <li><i class="fas fa-check"></i> Exterior paint surface wax</li>
+                                <li><i class="fas fa-check"></i> Interior vacuum</li>
+                                <li><i class="fas fa-check"></i> Interior vinyl cleaned</li>
+                                <li><i class="fas fa-check"></i> All glass surfaces cleaned</li>
+                                <li><i class="fas fa-check"></i> Wheel treatment/Tire shine</li>
+                            </ul>
+                            
+                            <a href="#contact" class="btn btn-service glow-btn" data-service="gold_wax">
+                                <i class="fas fa-calendar me-2"></i>
+                                Book Service
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Customer Reviews</h2>
+                <p class="section-subtitle">What our customers say about us</p>
+            </div>
+            <div class="rating-summary text-center mb-5" style="color: var(--text-cream);">
+                <div class="stars mb-2" style="display: flex; justify-content: center; gap: 5px;">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4 class="fw-bold mb-1">5 out of 5</h4>
+            </div>
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Excellent service! My car looks brand new after the ceramic coating. Professional team and amazing results."</p>
+                        <div class="reviewer">
+                            <strong>Sarah M.</strong>
+                            <span class="review-date">2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Best car detailing in Richmond! The Gold Wax package is worth every penny. Highly recommend!"</p>
+                        <div class="reviewer">
+                            <strong>Michael T.</strong>
+                            <span class="review-date">1 month ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Amazing transformation! The Richmond Special package made my SUV look like new. Professional and detailed work."</p>
+                        <div class="reviewer">
+                            <strong>Emma R.</strong>
+                            <span class="review-date">3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Consistent quality service. I've been a customer for over a year and they never disappoint. Great value!"</p>
+                        <div class="reviewer">
+                            <strong>David L.</strong>
+                            <span class="review-date">2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Outstanding attention to detail. The team went above and beyond. My car has never looked better!"</p>
+                        <div class="reviewer">
+                            <strong>Lisa K.</strong>
+                            <span class="review-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Professional service from start to finish. The ceramic coating has been lasting for months. Highly satisfied!"</p>
+                        <div class="reviewer">
+                            <strong>James H.</strong>
+                            <span class="review-date">4 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://www.google.com/search?hl=en-ET&gl=et&q=Richmond+Hand+Car+Wash+and+Detailing,+263+Richmond+St+W,+Toronto,+ON+M5V+3M6,+Canada&ludocid=11170541812640986242&lsig=AB86z5UfQTtqk7RnSTUnUPkzjpOe#lrd=0x882b34daa006c447:0x9b05bc98331d3482,3,,,,)" target="_blank" class="btn review-google-btn">
+                    <i class="fab fa-google me-2"></i>
+                    Review us on Google
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch to book your premium car detailing service</p>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="contact-form-container">
+                        <form id="bookingForm" class="contact-form floating-labels">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                        <label>Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                                        <label>Email Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
+                                        <label>Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="service_type">
+                                            <option value="">Select a service</option>
+                                            <option value="ceramic_coating">Ceramic Coating</option>
+                                            <option value="gold_wax">Gold Wax</option>
+                                            <option value="exterior_wash">Exterior Hand Wash</option>
+                                            <option value="bronze_package">Bronze Package</option>
+                                            <option value="silver_package">Silver Package</option>
+                                            <option value="gold_package">Gold Plus Package</option>
+                                            <option value="richmond_special">Richmond Special</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label>Service Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="vehicle_type">
+                                            <option value="">Select Vehicle Type</option>
+                                            <option value="Sedan">Sedan</option>
+                                            <option value="Suv">SUV</option>
+                                            <option value="Truck">Truck</option>
+                                            <option value="Van">Van</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <label>Vehicle Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="vehicle" name="vehicle_type" placeholder="Ex: Jeep Wrangler">
+                                        <label for="vehicle">Vehicle Make & Model</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" name="preferred_date">
+                                        <label>Preferred Date</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name="message" placeholder="Additional Message" style="height: 120px"></textarea>
+                                        <label>Additional Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        Send Booking Request
+                                        <div class="loading-spinner d-none">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Notification -->
+                            <div id="bookingNotification" class="mt-3"></div>
+                        </form>
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <div class="contact-item pulse-hover">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+16479375446">+1 647-937-5446</a><br>
+                                <a href="tel:+16475448615">+1 647-544-8615</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item pulse-hover">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:abelelu125@gmail.com">Richmond Car Detail</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon animated-clock">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Hours of Operation</h4>
+                                <p>Mon - Sat: 8AM - 6PM<br>
+                                   Sun: By Appointment</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <a href="https://www.google.com/maps/place/Richmond+Hand+Car+Wash+and+Detailing/@43.706582,-79.3992849,17z/data=!4m17!1m10!3m9!1s0x882b33dd8368d081:0xfe90b2919bc253b7!2sRichmond+Hand+Car+Wash+and+Detailing!8m2!3d43.7071228!4d-79.3994721!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11k9h4crgd!3m5!1s0x882b33dd8368d081:0xfe90b2919bc253b7!8m2!3d43.7071228!4d-79.3994721!16s%2Fg%2F11k9h4crgd?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="location-link">View on Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <a class="navbar-brand" href="#hero">
+                            <img src="images/car logo-richmond.jpg" alt="Logo" class="brand-logo">
+                             RICHMOND CAR DETAIL
+                        </a>
+                        <p>Premium automotive care services that bring out the best in your vehicle. Experience luxury, quality, and attention to detail.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="footer-social">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/richmond_car_detailing" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@richmondcardetailing?_r=1&_d=ehmdda2jjecb2l&sec_uid=MS4wLjABAAAAvV7Q92z-Xvog0uKHBX1aGeTWiOQrF9mHP4aif5bfGeW6sKVb4EdnyVKo3dhNf98M&share_author_id=6805216484181935109&sharer_language=en&source=h5_m&u_code=ehg07jd5cbjbi5&timestamp=1735403449&user_id=6805216484181935109&sec_user_id=MS4wLjABAAAAvV7Q92z-Xvog0uKHBX1aGeTWiOQrF9mHP4aif5bfGeW6sKVb4EdnyVKo3dhNf98M&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7453924766983988006&share_link_id=a2c2b78b-15a2-4a7d-9eb1-3e4c7c8b8f32&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.google.com/url?q=https%3A%2F%2Ft.snapchat.com%2FugYOQ9BQ&sa=D&sntz=1&usg=AOvVaw2jRBh4Ytr9rgBJQqW0ufd_" target="_blank" class="social-icon"><i class="fab fa-snapchat"></i></a>
+                        </div>
+                        
+                        <div class="footer-contact">
+                            <p><i class="fas fa-phone me-2"></i>+1 647-937-5446</p>
+                            <p><i class="fas fa-envelope me-2"></i><a href="mailto:abelelu125@gmail.com">Richmond Car Detail</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright">&copy; 2025 Richmond Car Detail. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-badges">
+                        <span class="badge-item"><i class="fas fa-shield-alt me-1"></i>Insured</span>
+                        <span class="badge-item"><i class="fas fa-award me-1"></i>Licensed</span>
+                        <span class="badge-item"><i class="fas fa-star me-1"></i>5-Star Rated</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
