@@ -2,18 +2,19 @@
 
 :root {
     /* Color Palette */
-    --primary-navy: #0f172a;
-    --secondary-slate: #1e293b;
-    --accent-gold: #f59e0b;
+    --primary-navy: #000000;         /* Change from navy to black */
+    --secondary-slate: #111111; 
+    --accent-gold: #000000;
     --text-cream: #f8fafc;
-    --dark-gray: #374151;
-    --gold-hover: #fbbf24;
-    --success-green: #10b981;
+    --dark-gray: #000000;
+    --gold-hover: #fb2424;
+    --success-green: #ffffff;
     --error-red: #ef4444;
+    --white: #ffffff;
     
     /* Typography */
-    --font-heading: 'Montserrat', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Exo 2', sans-serif;
+    --font-body: 'Alegreya Sans', sans-serif;
     
     /* Shadows */
     --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -77,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 .navbar {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     transition: var(--transition-medium);
     padding: 1rem 0;
@@ -95,26 +96,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar.scrolled {
-    background: rgba(15, 23, 42, 0.98);
+    background: rgba(0, 0, 0, 0.892);
     padding: 0.5rem 0;
 }
 
 .navbar-brand {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--text-cream) !important;
     transition: var(--transition-fast);
 }
 
 .navbar-brand:hover {
-    color: var(--accent-gold) !important;
+    color: #e2e8f0 !important;
     transform: scale(1.05);
 }
 
 .navbar-brand i {
     margin-right: 0.5rem;
-    color: var(--accent-gold);
+    color: #e2e8f0;
 }
 
 .nav-link {
@@ -144,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-    color: var(--accent-gold) !important;
+    color: #ffffff !important;
 }
 
 /* Hero Section */
@@ -221,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
     background: linear-gradient(135deg, var(--accent-gold) 0%, var(--gold-hover) 100%);
     border: none;
-    color: var(--primary-navy);
+    color: #ffffff;
     font-weight: 600;
     padding: 1rem 2rem;
     border-radius: 50px;
@@ -234,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-large), var(--shadow-gold);
-    color: var(--primary-navy);
+    color: #ffffff;
 }
 
 .btn-primary::before {
@@ -253,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-cta {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 1.2rem 2.5rem;
 }
 
@@ -270,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Floating Badge */
 .floating-badge {
     position: absolute;
-    top: 320px;
+    top: 300px;
     left: 30%;
     animation: float 3s ease-in-out infinite;
 }
@@ -304,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0.9;
 }
 
@@ -373,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card {
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     overflow: hidden;
     transition: all var(--transition-medium);
@@ -420,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.7), rgba(245, 158, 11, 0.3));
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(245, 158, 11, 0.3));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-icon {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: var(--accent-gold);
     filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.5));
 }
@@ -443,22 +444,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-name {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-cream);
 }
 
 .service-price {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #94a3b8;
 }
 
 .price-highlight {
-    color: var(--accent-gold);
+    color: var(--white);
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .pricing-tiers {
@@ -473,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 1rem;
     border-radius: 8px;
     border: 1px solid rgba(245, 158, 11, 0.3);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .service-features {
@@ -487,17 +488,18 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 0.5rem;
     color: #cbd5e1;
+    font-size: 1.25rem;
 }
 
 .service-features i {
     color: var(--success-green);
-    font-size: 0.9rem;
+    font-size: 1.35rem;
 }
 
 .btn-service {
     background: transparent;
     border: 2px solid var(--accent-gold);
-    color: var(--accent-gold);
+    color: var(--white);
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
     transition: all var(--transition-medium);
@@ -507,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .glow-btn:hover {
     background: var(--accent-gold);
-    color: var(--primary-navy);
+    color: var(--gold-hover);
     box-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
     transform: translateY(-2px);
 }
@@ -519,7 +521,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subscription-card {
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(29, 29, 29, 0.9) 100%);
     border-radius: 20px;
     padding: 2.5rem;
     border: 1px solid rgba(245, 158, 11, 0.2);
@@ -569,14 +571,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .plan-name {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    color: var(--accent-gold);
+    color: var(--white);
     margin-bottom: 0.5rem;
 }
 
 .plan-description {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #94a3b8;
 }
 
@@ -591,19 +593,19 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 1rem;
     color: var(--text-cream);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 .plan-benefits i {
     color: var(--success-green);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 .btn-subscribe {
     width: 100%;
     padding: 1.2rem;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     border: none;
     transition: all var(--transition-medium);
@@ -611,13 +613,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .golden-gradient {
     background: linear-gradient(135deg, var(--accent-gold) 0%, var(--gold-hover) 100%);
-    color: var(--primary-navy);
+    color: var(--white);
 }
 
 .golden-gradient:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-large), var(--shadow-gold);
-    color: var(--primary-navy);
+    color: var(--white);
 }
 
 /* ========================================
@@ -641,11 +643,11 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-toggle-btn {
     background: transparent;
     border: 2px solid var(--accent-gold);
-    color: var(--accent-gold);
+    color: var(--white);
     padding: 0.75rem 1.25rem;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     transition: all var(--transition-medium);
     cursor: pointer;
     display: flex;
@@ -657,10 +659,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery-toggle-btn:hover,
 .gallery-toggle-btn.active {
-    background: var(--accent-gold);
-    color: var(--primary-navy);
+    background: var(--gold-hover);
+    color: var(--white);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-medium), 0 0 20px rgba(245, 158, 11, 0.4);
+    box-shadow: var(--shadow-medium), 0 0 20px rgba(245, 11, 11, 0.4);
 }
 
 .gallery-toggle-btn i {
@@ -748,9 +750,9 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(245, 158, 11, 0.9);
+    background: rgba(245, 11, 11, 0.9);
     border: none;
-    color: var(--primary-navy);
+    color: var(--white);
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -1024,7 +1026,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .package-card {
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     padding: 2rem;
     border: 1px solid rgba(245, 158, 11, 0.2);
@@ -1047,12 +1049,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .package-premium {
     border-color: rgba(245, 158, 11, 0.2);
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .package-ultimate {
     border-color: #7c3aed;
-    background: rgba(124, 58, 237, 0.05);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .package-custom {
@@ -1068,7 +1070,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-navy);
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
     z-index: 2;
 }
@@ -1079,7 +1081,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .package-name {
-    font-size: 1.8rem;
+    font-size: 2.25rem;
     font-weight: 800;
     color: var(--text-cream);
     margin-bottom: 1rem;
@@ -1098,17 +1100,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 0.8rem;
     border-radius: 8px;
     border: 1px solid rgba(245, 158, 11, 0.3);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--text-cream);
 }
 
 .price {
-    color: var(--accent-gold);
+    color: var(--white);
     font-weight: 700;
 }
 
 .custom-pricing {
-    color: var(--accent-gold);
+    color: var(--white);
     font-weight: 600;
     font-style: italic;
 }
@@ -1124,7 +1126,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: left;
     justify-content: space-between;
     color: var(--text-cream);
-    font-size: 0.95rem;
+    font-size: 1.25rem;
 }
 
 .package-features i {
@@ -1135,18 +1137,19 @@ h1, h2, h3, h4, h5, h6 {
 .custom-price {
     color: var(--accent-gold);
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 
 .btn-package {
     background: linear-gradient(135deg, var(--accent-gold) 0%, var(--gold-hover) 100%);
     border: none;
-    color: var(--primary-navy);
+    color: var(--white);
     padding: 1rem 2rem;
     border-radius: 50px;
     font-weight: 700;
     width: 100%;
     transition: all var(--transition-medium);
+    font-size: 1.25rem;
 }
 
 .btn-package:hover {
@@ -1167,7 +1170,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-btn {
     background: linear-gradient(135deg, var(--accent-gold) 0%, var(--gold-hover) 100%);
     border: none;
-    color: var(--primary-navy);
+    color: var(--white);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1183,7 +1186,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-btn:hover {
     transform: scale(1.1);
-    box-shadow: var(--shadow-large), var(--shadow-gold);
+    box-shadow: var(--shadow-large), var(--gold-hover);
 }
 
 .carousel-btn:disabled {
@@ -1302,7 +1305,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonials-section .section-subtitle {
-    color: #64748b;
+    color: #898989;
 }
 
 .testimonials-grid {
@@ -1340,7 +1343,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .review-text {
     color: black;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
     font-style: normal;
@@ -1365,8 +1368,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .review-google-btn {
-    background: #4285f4;
-    color: white;
+    background: #ffffff;
+    color: black;
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
@@ -1378,7 +1381,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .review-google-btn:hover {
-    background: #3367d6;
+    background: #c46a7c;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
@@ -1390,11 +1393,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-form-container {
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     padding: 2.5rem;
     box-shadow: var(--shadow-medium);
-    border: 1px solid rgba(245, 158, 11, 0.2);
+    border: 1px solid rgba(245, 11, 11, 0.2);
 }
 
 .contact-form-container:hover {
@@ -1408,15 +1411,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control, .form-select {
-    background: rgba(15, 23, 42, 0.8);
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(245, 11, 11, 0.3);
     color: var(--text-cream);
     border-radius: 10px;
     transition: all var(--transition-medium);
 }
 
 .form-control:focus, .form-select:focus {
-    background: rgba(15, 23, 42, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     border-color: var(--accent-gold);
     box-shadow: 0 0 0 0.2rem rgba(245, 158, 11, 0.25);
     color: var(--text-cream);
@@ -1429,7 +1432,7 @@ h1, h2, h3, h4, h5, h6 {
 .submit-btn {
     background: linear-gradient(135deg, var(--accent-gold) 0%, var(--gold-hover) 100%);
     border: none;
-    color: var(--primary-navy);
+    color: var(--white);
     font-weight: 700;
     padding: 1.2rem 2rem;
     border-radius: 50px;
@@ -1441,7 +1444,7 @@ h1, h2, h3, h4, h5, h6 {
 .submit-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-large), var(--shadow-gold);
-    color: var(--primary-navy);
+    color: var(--white);
 }
 
 .loading-spinner {
@@ -1460,15 +1463,15 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: rgba(30, 41, 59, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     border: 1px solid rgba(245, 158, 11, 0.2);
     transition: all var(--transition-medium);
 }
 
 .contact-item:hover {
-    background: rgba(30, 41, 59, 0.8);
-    border-color: var(--accent-gold);
+    background: rgba(0, 0, 0, 0.8);
+    border-color: var(--white);
     transform: translateX(10px);
 }
 
@@ -1482,14 +1485,14 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     margin-right: 1.5rem;
     font-size: 1.5rem;
-    color: var(--primary-navy);
+    color: var(--white);
     flex-shrink: 0;
 }
 
 .contact-details h4 {
-    color: var(--accent-gold);
+    color: var(--white);
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 .contact-details p, .contact-details a {
@@ -1500,7 +1503,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-details a:hover {
-    color: var(--accent-gold);
+    color: var(--white);
 }
 
 .pulse-hover:hover .contact-icon {
@@ -1523,7 +1526,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .location-link {
-    color: var(--accent-gold) !important;
+    color: var(--white) !important;
     font-weight: 600;
 }
 
@@ -1546,12 +1549,12 @@ h1, h2, h3, h4, h5, h6 {
 .footer-section {
     background: var(--secondary-slate);
     padding: 3rem 0 1.5rem;
-    border-top: 1px solid rgba(245, 158, 11, 0.2);
+    border-top: 1px solid rgba(245, 11, 11, 0.2);
 }
 
 .footer-brand h3 {
-    color: var(--accent-gold);
-    font-size: 1.5rem;
+    color: var(--white);
+    font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
@@ -1581,11 +1584,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-links a:hover {
-    color: var(--accent-gold);
+    color: var(--white);
 }
 
 .footer-social h5 {
-    color: var(--text-cream);
+    color: var(--white);
     margin-bottom: 1rem;
 }
 
@@ -1598,19 +1601,19 @@ h1, h2, h3, h4, h5, h6 {
 .social-icon {
     width: 45px;
     height: 45px;
-    background: rgba(245, 158, 11, 0.1);
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    background: rgba(245, 11, 171, 0.1);
+    border: 1px solid rgba(245, 11, 11, 0.3);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--accent-gold);
+    color: var(--white);
     text-decoration: none;
     transition: all var(--transition-medium);
 }
 
 .social-icon:hover {
-    background: var(--accent-gold);
+    background: var(--white);
     color: var(--primary-navy);
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
@@ -1624,12 +1627,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-contact i {
-    color: var(--accent-gold);
+    color: var(--white);
     margin-right: 0.5rem;
 }
 
 .footer-divider {
-    border-color: rgba(245, 158, 11, 0.2);
+    border-color: rgba(245, 11, 11, 0.2);
     margin: 2rem 0;
 }
 
@@ -1646,12 +1649,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-item {
-    background: rgba(245, 158, 11, 0.1);
-    color: var(--accent-gold);
+    background: rgba(245, 11, 11, 0.1);
+    color: var(--white);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    border: 1px solid rgba(245, 11, 11, 0.3);
 }
 
 /* Responsive Design */
@@ -1661,7 +1664,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .section-title {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -1872,7 +1875,7 @@ html {
 }
 
 .price-item {
-    background: rgba(245, 158, 11, 0.1);
+    background: rgba(245, 11, 11, 0.1);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     color: var(--accent-gold);
